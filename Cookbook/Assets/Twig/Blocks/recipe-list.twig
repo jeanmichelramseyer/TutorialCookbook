@@ -1,0 +1,14 @@
+{% if blockTitle %}
+<h1>{{ blockTitle }}</h1>
+{% endif %}
+<ul class="list-unstyled">
+	{% for item in items %}
+		{% set doc = item.doc %}
+		{% set docUrl = item.url %}
+		<li>
+			{% include 'Tutorial_Cookbook/Items/recipe-small.twig' %}
+		</li>
+	{% endfor %}
+</ul>
+
+{% include 'Rbs_Generic/pagination.twig' %}

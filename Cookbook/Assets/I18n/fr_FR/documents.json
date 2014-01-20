@@ -1,0 +1,92 @@
+{
+	"recipe_label":{
+		"message":"label de la recette"
+	},
+	"recipe_title":{
+		"message":"afficher en front comme"
+	},
+	"recipe_titlesync":{
+		"message":"synchroniser avec le label"
+	},
+	"recipe_titlehelp":{
+		"message":"permet d'indiquer le nom de la recette"
+	},
+	"recipe_vegetarian":{
+		"message":"recette végétarienne"
+	},
+	"recipe_vegetarianhelp":{
+		"message":"indique si la recette est végétarienne ou non"
+	},
+	"recipe_ingredients":{
+		"message":"ingrédients"
+	},
+	"recipe_ingredientshelp":{
+		"message":"permet de saisir la liste complète des ingrédients nécessaires à la réalisation de la recette"
+	},
+	"recipe_peoplenumber":{
+		"message":"nombre de convives"
+	},
+	"recipe_peoplenumberhelp":{
+		"message":"indique le nombre de personnes pour les quantités"
+	},
+	"recipe_preparation":{
+		"message":"instructions de préparation"
+	},
+	"recipe_preparationhelp":{
+		"message":"détail de la préparation de la recette, ordre de cuisson etc..."
+	},
+	"recipe_preparationtime":{
+		"message":"temps de préparation"
+	},
+	"recipe_preparationtimehelp":{
+		"message":"temps (en minutes) nécessaire à la préparation de la recette"
+	},
+	"recipe_cookingtime":{
+		"message":"temps de cuisson"
+	},
+	"recipe_cookingtimehelp":{
+		"message":"temps (en minutes) nécessaire à la cuisson de la recette"
+	},
+	"recipe_resttime":{
+		"message":"temps de repos"
+	},
+	"recipe_restimehelp":{
+		"message":"temps de repos nécéssaire"
+	},
+	"recipe_resttimeunit":{
+		"message":"unité de repos"
+	},
+	"recipe_restimeunithelp":{
+		"message":"permet de définir l'unité pour le temp de repos"
+	},
+	"recipe_picture":{
+		"message":"image"
+	},
+	"recipe_picturepickertitle":{
+		"message":"choisissez une image pour illustrer la recette"
+	},
+	"recipe_picture_help":{
+		"message":"image illustrant la recette"
+	},
+	"recipe_difficulty":{
+		"message":"difficulté"
+	},
+	"recipe_difficulty_help":{
+		"message":"niveau de difficulté de la recette"
+	},
+	"recipe_cost":{
+		"message":"indication de coût"
+	},
+	"recipe_costhelp":{
+		"message":"type de budget pour la recette"
+	},
+	"recipe":{
+		"message":"recette"
+	},
+	"recipe_list":{
+		"message":"liste des recettes"
+	},
+	"recipe_create":{
+		"message":"ajouter une recette"
+	}
+}

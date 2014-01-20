@@ -1,0 +1,94 @@
+<form name="form" ng-submit="submit()" class="form-horizontal">
+	<fieldset data-ng-show="section==''"
+		data-form-section-label="{{ i18nAttr('m.rbs.admin.admin.general_properties', ['ucf']) }}"
+		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.properties', ['ucf']) }}">
+		<rbs-field-text property="label" required="true"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'label'), ['ucf']) }}">
+		</rbs-field-text>
+
+		<rbs-field-text property="title" required="true"
+			label="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_title', ['ucf']) }}"
+			rbs-sync-value="document.label"
+			sync-title="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_titlesync', ['ucf']) }}">
+		</rbs-field-text>
+
+		<rbs-field-boolean property="vegetarian"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'vegetarian'), ['ucf']) }}">
+		</rbs-field-boolean>
+
+
+		<rbs-field label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'difficulty'), ['ucf']) }}">
+			<select class="form-control" ng-model="document.difficulty" rbs-items-from-collection="Tutorial_Cookbook_Collection_RecipeDifficulty">
+				<option value=""> {{ i18n('m.tutorial.cookbook.admin.difficulty_select', ['ucf']) }}</option>
+			</select>
+		</rbs-field>
+
+		<rbs-field-integer property="peopleNumber"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'peopleNumber'), ['ucf']) }}">
+		</rbs-field-integer>
+
+		<rbs-field-integer property="preparationTime"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'preparationTime'), ['ucf']) }}">
+		</rbs-field-integer>
+
+		<rbs-field-integer property="cookingTime"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'cookingTime'), ['ucf']) }}">
+		</rbs-field-integer>
+
+		<rbs-field-integer property="restTime"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'restTime'), ['ucf']) }}">
+		</rbs-field-integer>
+		<rbs-field label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'restTimeUnit'), ['ucf']) }}">
+			<select class="form-control"  ng-model="document.restTimeUnit" rbs-items-from-collection="Tutorial_Cookbook_Collection_RestTimeUnit">
+				<option value=""> {{ i18n('m.tutorial.cookbook.admin.resttimeunit_select', ['ucf']) }}</option>
+			</select>
+		</rbs-field>
+
+		<rbs-field-picker property="picture" label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'picture'), ['ucf']) }}"
+			accepted-model="Rbs_Media_Image" allow-creation="true" allow-edition="true"
+			selector-title="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_picturepickertitle', ['ucf']) }}">
+			<span class="help-block">{{ i18n('m.tutorial.cookbook.documents.recipe_picturehelp', ['ucf']) }}</span>
+		</rbs-field-picker>
+
+		<rbs-field  label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'cost'), ['ucf']) }}">
+			<select class="form-control" ng-model="document.cost" rbs-items-from-collection="Tutorial_Cookbook_Collection_RecipeCost">
+				<option value=""> {{ i18n('m.tutorial.cookbook.admin.cost_select', ['ucf']) }}</option>
+			</select>
+		</rbs-field>
+
+		<rbs-field-rich-text property="ingredients" required="true" profile="Website"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'ingredients'), ['ucf']) }}">
+		</rbs-field-rich-text>
+
+		<rbs-field-rich-text property="preparation" required="true" profile="Website"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'preparation'), ['ucf']) }}">
+		</rbs-field-rich-text>
+	</fieldset>
+
+	<fieldset data-ng-show="section=='publication'"
+		data-form-section-label="{{ i18nAttr('m.rbs.admin.admin.publication_properties', ['ucf']) }}"
+		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.properties', ['ucf']) }}">
+
+		<rbs-field-date property="startPublication"
+			label="{{ i18nAttr('m.rbs.event.documents.event.startPublication', ['ucf']) }}">
+		</rbs-field-date>
+
+		<rbs-field-date property="endPublication"
+			label="{{ i18nAttr('m.rbs.event.documents.event.endPublication', ['ucf']) }}">
+		</rbs-field-date>
+	</fieldset>
+
+	<fieldset data-ng-show="section=='systeminfo'"
+		data-form-section-label="{{ i18nAttr('m.rbs.admin.adminjs.status', ['ucf']) }}"
+		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.information', ['ucf']) }}"
+		data-document-system-info-section>
+	</fieldset>
+
+	<fieldset ng-show="section=='timeline'"
+		data-form-section-label="{{ i18nAttr('m.rbs.timeline.admin.message_list', ['ucf']) }}"
+		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.information', ['ucf']) }}"
+		rbs-timeline>
+	</fieldset>
+
+	<rbs-form-button-bar></rbs-form-button-bar>
+</form>

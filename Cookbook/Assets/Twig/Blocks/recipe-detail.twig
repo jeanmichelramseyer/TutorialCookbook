@@ -1,0 +1,87 @@
+{% if doc %}
+{% import 'Tutorial_Cookbook/macros.twig' as recipeMacros %}
+<article itemscope="" itemtype="http://schema.org/Article">
+	<header>
+		<h1>{{ doc.currentLocalization.title }}</h1>
+	</header>
+	<div>
+		<div class="recipe-detail-header">
+			{% if doc.picture %}
+				<div class="recipe-detail-pic">
+					<img itemprop="image" src="{{ recipeMacros.detailVisualURL(doc.picture) }}" alt="{{ doc.picture.title }}" />
+				</div>
+			{% endif %}
+
+			<ul>
+				{% if doc.vegetarian %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.front.vegetarian', ['ucf']) }}</strong>
+				</li>
+				{% endif %}
+				{% if doc.peoplenumber %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_peoplenumber', ['ucf', 'lab']) }}</strong>
+					{{ doc.peoplenumber }}
+				</li>
+				{% endif %}
+				{% if doc.preparationtime %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_preparationtime', ['ucf', 'lab']) }}</strong>
+					{{ doc.peoplenumber }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
+				</li>
+				{% endif %}
+				{% if doc.cookingtime %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_cookingtime', ['ucf', 'lab']) }}</strong>
+					{{ doc.peoplenumber }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
+				</li>
+				{% endif %}
+				{% if doc.restime %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_restime', ['ucf', 'lab']) }}</strong>
+					{{ doc.restime }}
+						{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeRestimeUnit') %}
+							{% if doc.restimeunit == item.value %}
+								{{ item.title }}
+							{% endif %}
+						{% endfor %}
+				</li>
+				{% endif %}
+				{% if doc.difficulty %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_difficulty', ['ucf', 'lab']) }}</strong>
+					{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeDifficulty') %}
+						{% if doc.difficulty == item.value %}
+							{{ item.title }}
+						{% endif %}
+					{% endfor %}
+				</li>
+				{% endif %}
+				{% if doc.cost %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_cost', ['ucf', 'lab']) }}</strong>
+					{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeCost') %}
+						{% if doc.difficulty == item.value %}
+							{{ item.title }}
+						{% endif %}
+					{% endfor %}
+				</li>
+				{% endif %}
+			</ul>
+		</div>
+
+		<div class="recipe-detail">
+			<fieldset class="recipe-ingredients-detail">
+				<legend>{{ i18n('m.tutorial.cookbook.documents.recipe_ingredients', ['ucf']) }}</legend>
+				{{ doc.currentLocalization.ingredients|richText }}
+			</fieldset>
+			<div class="recipe-preparation-detail">
+				<h2>{{ i18n('m.tutorial.cookbook.documents.recipe_preparation', ['ucf']) }}</h2>
+				{{ doc.currentLocalization.preparation|richText }}
+			</div>
+		</div>
+	</div>
+</article>
+{% else %}
+	<strong>{{ i18n('m.tutorial.cookbook.front.recipe_not_found', ['ucf']) }}</strong>
+{% endif %}

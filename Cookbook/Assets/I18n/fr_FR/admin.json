@@ -1,0 +1,45 @@
+{
+	"module_name":{
+		"message":"Livre de recettes"
+	},
+	"module_keywords":{
+		"message":"recettes, gourmand, dessert, plat, cuisine, cuisiner"
+	},
+	"cooking_section":{
+		"message":"ingrédients et préparation"
+	},
+
+
+	"resttimeunit_select":{
+		"message":"sélectionnez l'unité du temps de repos"
+	},
+	"cost_select":{
+		"message":"sélectionnez une indication de coût"
+	},
+	"difficulty_select":{
+		"message":"sélectionnez un niveau de difficulté"
+	},
+
+	"list_items_per_page":{
+		"message":"nombre de recettes par page"
+	},
+	"recipe_list_label":{
+		"message":"liste des recettes"
+	},
+	"recipe_list_function":{
+		"message":"liste des recettes"
+	},
+	"recipe_list_block_title":{
+		"message":"titre du bloc à afficher"
+	},
+
+	"recipe_detail_label":{
+		"message":"détail d'une recette"
+	},
+	"recipe_detail_function":{
+		"message":"détail d'une recette"
+	},
+	"recipe_doc":{
+		"message":"recette à afficher"
+	}
+}

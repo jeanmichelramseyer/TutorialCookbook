@@ -1,0 +1,92 @@
+{
+	"recipe_label":{
+		"message":"recipe label"
+	},
+	"recipe_title":{
+		"message":"display in frontoffice as"
+	},
+	"recipe_titlesync":{
+		"message":"synchronize with label"
+	},
+	"recipe_title_help":{
+		"message":"allow you to give the recipe name"
+	},
+	"recipe_vegetarian":{
+		"message":"vegetarian recipe"
+	},
+	"recipe_vegetarian_help":{
+		"message":"indicates whether recipe is vegetarian or not"
+	},
+	"recipe_ingredients":{
+		"message":"ingredients"
+	},
+	"recipe_ingredientshelp":{
+		"message":"indicates the complete list of ingredients in the recipe preparation"
+	},
+	"recipe_peoplenumber":{
+		"message":"number of guests"
+	},
+	"recipe_peoplenumberhelp":{
+		"message":"indicates the number of quantities for"
+	},
+	"recipe_preparation":{
+		"message":"cooking instructions"
+	},
+	"recipe_preparation_help":{
+		"message":"details of the preparation of the recipe, order cooking etc ..."
+	},
+	"recipe_preparationtime":{
+		"message":"preparation time"
+	},
+	"recipe_preparationtime_help":{
+		"message":"time (in minutes) needed to prepare the recipe"
+	},
+	"recipe_cookingtime":{
+		"message":"cooking time"
+	},
+	"recipe_cookingtime_help":{
+		"message":"time (in minutes) for cooking recipe"
+	},
+	"recipe_resttime":{
+		"message":"rest time"
+	},
+	"recipe_restime_help":{
+		"message":"time needed rest"
+	},
+	"recipe_resttimeunit":{
+		"message":"rest unity"
+	},
+	"recipe_restimeunit_help":{
+		"message":"sets the unit for rest time"
+	},
+	"recipe_picture":{
+		"message":"image"
+	},
+	"recipe_picture_picker_title":{
+		"message":"choose an image to illustrate the recipe"
+	},
+	"recipe_picture_help":{
+		"message":"image depicting the recipe"
+	},
+	"recipe_difficulty":{
+		"message":"difficulty"
+	},
+	"recipe_difficulty_help":{
+		"message":"difficulty of the recipe"
+	},
+	"recipe_cost":{
+		"message":"cost indication"
+	},
+	"recipe_cost_help":{
+		"message":"type of budget for the recipe"
+	},
+	"recipe_recipe":{
+		"message":"recipe"
+	},
+	"recipe_list":{
+		"message":"recipes list"
+	},
+	"recipe_create":{
+		"message":"add a recipe"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"RecipeList" : {
+		"cssAssets" : ["Theme/Rbs/Base/Tutorial_Cookbook/css/recipe-small.css"]
+	},
+	"RecipeDetail" : {
+		"cssAssets" : ["Theme/Rbs/Base/Tutorial_Cookbook/css/recipe-detail.css"]
+	}
+}

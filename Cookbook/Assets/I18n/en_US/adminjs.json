@@ -1,0 +1,11 @@
+{
+	"module_name":{
+		"message":"Cookbook"
+	},
+	"module_keywords":{
+		"message":"recipes, eaters, dessert, cooking, cook, kitchen"
+	},
+	"cooking_section":{
+		"message":"ingredient and preparation"
+	}
+}

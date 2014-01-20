@@ -1,0 +1,44 @@
+{
+	"module_name":{
+		"message":"Cookbook"
+	},
+	"module_keywords":{
+		"message":"recipes, eaters, dessert, cooking, cook, kitchen"
+	},
+	"cooking_section":{
+		"message":"ingredient and preparation"
+	},
+
+	"resttimeunit_select":{
+		"message":"choose rest time unit"
+	},
+	"cost_select":{
+		"message":"choose a cost level"
+	},
+	"difficulty_select":{
+		"message":"choose a difficulty level"
+	},
+
+	"list_items_per_page":{
+		"message":"recipes per page"
+	},
+	"recipe_list_label":{
+		"message":"recipes list"
+	},
+	"recipe_list_function":{
+		"message":"recipes list"
+	},
+	"recipe_list_block_title":{
+		"message":"recipe list"
+	},
+
+	"recipe_detail_label":{
+		"message":"recipe detail"
+	},
+	"recipe_detail_function":{
+		"message":"recipe detail"
+	},
+	"recipe_doc":{
+		"message":"recipe to display"
+	}
+}

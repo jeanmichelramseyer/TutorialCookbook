@@ -1,0 +1,11 @@
+{
+	"minutes":{
+		"message":"minutes"
+	},
+	"vegetarian":{
+		"message":"recette végétarienne"
+	},
+	"recipe_not_found":{
+		"message":"désolé, nous n'avons pas trouvé la recette demandée"
+	}
+}

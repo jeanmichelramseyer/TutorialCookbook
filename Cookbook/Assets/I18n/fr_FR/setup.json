@@ -1,0 +1,34 @@
+{
+	"difficulty_veryeasy":{
+		"message":"très facile"
+	},
+	"difficulty_easy":{
+		"message":"facile"
+	},
+	"difficulty_medium":{
+		"message":"moyenne"
+	},
+	"difficulty_hard":{
+		"message":"difficile"
+	},
+
+	"cost_cheap":{
+		"message":"bon marché"
+	},
+	"cost_medium":{
+		"message":"normal"
+	},
+	"cost_expensive":{
+		"message":"cher"
+	},
+
+	"resttimeunit_minutes":{
+		"message":"minutes"
+	},
+	"resttimeunit_hours":{
+		"message":"heures"
+	},
+	"resttimeunit_days":{
+		"message":"jours"
+	}
+}

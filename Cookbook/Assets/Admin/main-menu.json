@@ -1,0 +1,10 @@
+{
+	"entries": [
+		{
+			"section": "cms",
+			"label": "m.tutorial.cookbook.admin.module_name",
+			"url": "Tutorial/Cookbook",
+			"keywords": "m.tutorial.cookbook.admin.module_keywords"
+		}
+	]
+}

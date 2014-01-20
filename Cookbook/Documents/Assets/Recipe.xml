@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document xmlns="http://www.rbs.fr/schema/change-document/4.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/4.0 http://www.rbschange.fr/schema/4.0/document.xsd"
+	editable="true" localized="true" publishable="true">
+	<properties>
+		<property name="vegetarian" type="Boolean" />
+		<property name="ingredients" localized="true" type="RichText"/>
+		<property name="peopleNumber" type="Integer"/>
+		<property name="preparation" localized="true" type="RichText"/>
+		<property name="preparationTime" type="Integer"/>
+		<property name="cookingTime" type="Integer"/>
+		<property name="restTime" type="Integer"/>
+		<property name="restTimeUnit" type="String"/>
+		<property name="picture" type="Document" document-type="Rbs_Media_Image" has-correction="true" />
+		<property name="difficulty"  type="Integer" />
+		<property name="cost" type="Integer" />
+	</properties>
+</document>

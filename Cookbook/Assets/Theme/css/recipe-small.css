@@ -1,0 +1,15 @@
+.recipe-small-item
+{
+	display: inline-block;
+}
+
+.recipe-small-item img
+{
+	display: block;
+	float: left;
+}
+
+.recipe-small-item ul
+{
+	float: left;
+}

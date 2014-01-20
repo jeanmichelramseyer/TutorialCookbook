@@ -1,0 +1,45 @@
+{% import 'Tutorial_Cookbook/macros.twig' as recipeMacros %}
+<article itemscope="" itemtype="http://schema.org/Article" class="recipe-details">
+	<header>
+		<meta itemprop="url" content="{{ docUrl }}" />
+		<h2 itemprop="name"><a href="{{ docUrl }}">{{ doc.currentLocalization.title }}</a></h2>
+	</header>
+
+
+	<div class="recipe-small-item">
+		{% if doc.picture %}<img itemprop="image" style="display:block;float:left;" src="{{ recipeMacros.listThumbnailURL(doc.picture) }}" alt="" />{% endif %}
+		<ul itemprop="description">
+			{% if doc.vegetarian %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.front.vegetarian', ['ucf']) }}</strong>
+				</li>
+			{% endif %}
+			{% if doc.peoplenumber %}
+			<li>
+				<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_peoplenumber', ['ucf', 'lab']) }}</strong>
+				{{ doc.peoplenumber }}
+			</li>
+			{% endif %}
+			{% if doc.cost %}
+				<li>
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_cost', ['ucf', 'lab']) }}</strong>
+					{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeCost') %}
+						{% if doc.difficulty == item.value %}
+							{{ item.title }}
+						{% endif %}
+					{% endfor %}
+				</li>
+			{% endif %}
+			{% if doc.difficulty %}
+			<li>
+				<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_difficulty', ['ucf', 'lab']) }}</strong>
+				{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeDifficulty') %}
+					{% if doc.difficulty == item.value %}
+						{{ item.title }}
+					{% endif %}
+				{% endfor %}
+			</li>
+			{% endif %}
+		</ul>
+	</div>
+</article>
