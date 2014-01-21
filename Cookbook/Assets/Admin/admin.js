@@ -14,9 +14,9 @@
 	{
 		$provide.decorator('RbsChange.UrlManager', ['$delegate', function ($delegate)
 		{
-			$delegate.model('Tutorial_Cookbook').route('home', 'Tutorial/Cookbook', { 'redirectTo': 'Tutorial/Cookbook/Recipe/'});
+			$delegate.module('Tutorial_Cookbook', 'Tutorial/Cookbook', { 'redirectTo': 'Tutorial/Cookbook/Recipe/'});
 			$delegate.routesForLocalizedModels(['Tutorial_Cookbook_Recipe']);
-			return $delegate;
+			return $delegate.module(null);
 		}]);
 	}]);
 })();

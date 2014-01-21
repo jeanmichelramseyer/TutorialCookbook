@@ -40,5 +40,8 @@
 	},
 	"recipe_doc":{
 		"message":"recipe to display"
+	},
+	"recipe_list":{
+		"message":"recipes list"
 	}
 }

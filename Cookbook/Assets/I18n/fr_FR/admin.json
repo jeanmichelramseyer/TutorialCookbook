@@ -41,5 +41,8 @@
 	},
 	"recipe_doc":{
 		"message":"recette à afficher"
+	},
+	"recipe_list":{
+		"message":"liste des recettes"
 	}
 }
