@@ -1,0 +1,88 @@
+{
+	"/Tutorial/Cookbook/": {
+		"module": "Tutorial_Cookbook",
+		"name": "home",
+		"rule": {
+			"redirectTo": "/Tutorial/Cookbook/Recipe/",
+			"labelKey": "m.tutorial.cookbook.admin.module_name | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "list",
+		"rule": {
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/list.twig",
+			"labelKey": "m.tutorial.cookbook.admin.recipe_list | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/:id": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "form",
+		"rule": {
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/form.twig",
+			"labelKey": "m.tutorial.cookbook.documents.recipe | ucf",
+			"labelId": "id"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/:id/timeline": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "timeline",
+		"rule": {
+			"templateUrl": "Rbs/Timeline/timeline.twig?model=Tutorial_Cookbook_Recipe",
+			"controller": "RbsChangeTimelineController",
+			"labelKey": "m.rbs.timeline.admin.timeline | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/:id/translate/:LCID": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "translate",
+		"rule": {
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/form.twig",
+			"controller": "RbsChangeTranslateEditorController",
+			"labelKey": "m.rbs.admin.admin.translation | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/:id/translate/:LCID/workflow": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "localizedWorkflow",
+		"rule": {
+			"templateUrl": "Rbs/Admin/workflow/workflow.twig?model=Tutorial_Cookbook_Recipe",
+			"controller": "RbsChangeWorkflowController",
+			"labelKey": "m.rbs.workflow.admin.workflow | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/:id/urls": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "urls",
+		"rule": {
+			"templateUrl": "Rbs/Admin/url-manager.twig",
+			"labelKey": "m.rbs.admin.admin.urls | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/:id/workflow": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "workflow",
+		"rule": {
+			"templateUrl": "Rbs/Admin/workflow/workflow.twig?model=Tutorial_Cookbook_Recipe",
+			"controller": "RbsChangeWorkflowController",
+			"labelKey": "m.rbs.workflow.admin.workflow | ucf"
+		},
+		"auto": true
+	},
+	"/Tutorial/Cookbook/Recipe/new": {
+		"model": "Tutorial_Cookbook_Recipe",
+		"name": "new",
+		"rule": {
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/form.twig",
+			"labelKey": "m.rbs.admin.adminjs.new_resource | ucf"
+		},
+		"auto": true
+	}
+}

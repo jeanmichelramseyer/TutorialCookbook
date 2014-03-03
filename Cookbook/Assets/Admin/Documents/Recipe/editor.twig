@@ -7,7 +7,7 @@
 		</rbs-field-text>
 
 		<rbs-field-text property="title" required="true"
-			label="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_title', ['ucf']) }}"
+			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'title'), ['ucf']) }}"
 			rbs-sync-value="document.label"
 			sync-title="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_titlesync', ['ucf']) }}">
 		</rbs-field-text>
@@ -16,9 +16,9 @@
 			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'vegetarian'), ['ucf']) }}">
 		</rbs-field-boolean>
 
-
 		<rbs-field label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'difficulty'), ['ucf']) }}">
-			<select class="form-control" ng-model="document.difficulty" rbs-items-from-collection="Tutorial_Cookbook_Collection_RecipeDifficulty">
+			<select class="form-control" data-ng-model="document.difficulty"
+				data-rbs-items-from-collection="Tutorial_Cookbook_Collection_RecipeDifficulty">
 				<option value=""> {{ i18n('m.tutorial.cookbook.admin.difficulty_select', ['ucf']) }}</option>
 			</select>
 		</rbs-field>
@@ -39,7 +39,8 @@
 			label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'restTime'), ['ucf']) }}">
 		</rbs-field-integer>
 		<rbs-field label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'restTimeUnit'), ['ucf']) }}">
-			<select class="form-control"  ng-model="document.restTimeUnit" rbs-items-from-collection="Tutorial_Cookbook_Collection_RestTimeUnit">
+			<select class="form-control" data-ng-model="document.restTimeUnit"
+				data-rbs-items-from-collection="Tutorial_Cookbook_Collection_RestTimeUnit">
 				<option value=""> {{ i18n('m.tutorial.cookbook.admin.resttimeunit_select', ['ucf']) }}</option>
 			</select>
 		</rbs-field>
@@ -47,11 +48,12 @@
 		<rbs-field-picker property="picture" label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'picture'), ['ucf']) }}"
 			accepted-model="Rbs_Media_Image" allow-creation="true" allow-edition="true"
 			selector-title="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_picturepickertitle', ['ucf']) }}">
-			<span class="help-block">{{ i18n('m.tutorial.cookbook.documents.recipe_picturehelp', ['ucf']) }}</span>
+			<span class="help-block">{{ i18n('m.tutorial.cookbook.documents.recipe_picture_help', ['ucf']) }}</span>
 		</rbs-field-picker>
 
 		<rbs-field  label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'cost'), ['ucf']) }}">
-			<select class="form-control" ng-model="document.cost" rbs-items-from-collection="Tutorial_Cookbook_Collection_RecipeCost">
+			<select class="form-control" data-ng-model="document.cost"
+				data-rbs-items-from-collection="Tutorial_Cookbook_Collection_RecipeCost">
 				<option value=""> {{ i18n('m.tutorial.cookbook.admin.cost_select', ['ucf']) }}</option>
 			</select>
 		</rbs-field>
@@ -67,27 +69,14 @@
 
 	<fieldset data-ng-show="section=='publication'"
 		data-form-section-label="{{ i18nAttr('m.rbs.admin.admin.publication_properties', ['ucf']) }}"
-		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.properties', ['ucf']) }}">
-
-		<rbs-field-date property="startPublication"
-			label="{{ i18nAttr('m.rbs.event.documents.event.startPublication', ['ucf']) }}">
-		</rbs-field-date>
-
-		<rbs-field-date property="endPublication"
-			label="{{ i18nAttr('m.rbs.event.documents.event.endPublication', ['ucf']) }}">
-		</rbs-field-date>
+		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.properties', ['ucf']) }}"
+		data-rbs-document-publication-section="">
 	</fieldset>
 
 	<fieldset data-ng-show="section=='systeminfo'"
 		data-form-section-label="{{ i18nAttr('m.rbs.admin.adminjs.status', ['ucf']) }}"
 		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.information', ['ucf']) }}"
-		data-document-system-info-section>
-	</fieldset>
-
-	<fieldset ng-show="section=='timeline'"
-		data-form-section-label="{{ i18nAttr('m.rbs.timeline.admin.message_list', ['ucf']) }}"
-		data-form-section-group="{{ i18nAttr('m.rbs.admin.admin.information', ['ucf']) }}"
-		rbs-timeline>
+		data-rbs-document-system-info-section="">
 	</fieldset>
 
 	<rbs-form-button-bar></rbs-form-button-bar>
