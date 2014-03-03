@@ -5,12 +5,6 @@
 
 	<hr />
 
-	<rbs-field-picker property="picture" label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'picture'), ['ucf']) }}"
-		accepted-model="Rbs_Media_Image" allow-creation="true" allow-edition="true"
-		selector-title="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_picturepickertitle', ['ucf']) }}">
-		<span class="help-block">{{ i18n('m.tutorial.cookbook.documents.recipe_picture_help', ['ucf']) }}</span>
-	</rbs-field-picker>
-
 	<rbs-field-rich-text property="ingredients" required="true" profile="Website"
 		label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'ingredients'), ['ucf']) }}">
 	</rbs-field-rich-text>
