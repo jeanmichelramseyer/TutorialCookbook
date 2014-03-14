@@ -43,5 +43,8 @@
 	},
 	"recipe_list":{
 		"message":"recipes"
+	},
+	"recipe_create":{
+		"message":"add a recipe"
 	}
 }
