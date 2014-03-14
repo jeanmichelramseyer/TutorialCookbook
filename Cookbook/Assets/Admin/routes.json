@@ -19,21 +19,11 @@
 	},
 	"/Tutorial/Cookbook/Recipe/:id": {
 		"model": "Tutorial_Cookbook_Recipe",
-		"name": "form",
+		"name": "edit",
 		"rule": {
-			"templateUrl": "Document/Tutorial/Cookbook/Recipe/form.twig",
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/edit.twig",
 			"labelKey": "m.tutorial.cookbook.documents.recipe | ucf",
 			"labelId": "id"
-		},
-		"auto": true
-	},
-	"/Tutorial/Cookbook/Recipe/:id/timeline": {
-		"model": "Tutorial_Cookbook_Recipe",
-		"name": "timeline",
-		"rule": {
-			"templateUrl": "Rbs/Timeline/timeline.twig?model=Tutorial_Cookbook_Recipe",
-			"controller": "RbsChangeTimelineController",
-			"labelKey": "m.rbs.timeline.admin.timeline | ucf"
 		},
 		"auto": true
 	},
@@ -41,7 +31,7 @@
 		"model": "Tutorial_Cookbook_Recipe",
 		"name": "translate",
 		"rule": {
-			"templateUrl": "Document/Tutorial/Cookbook/Recipe/form.twig",
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/translate.twig",
 			"controller": "RbsChangeTranslateEditorController",
 			"labelKey": "m.rbs.admin.admin.translation | ucf"
 		},
@@ -80,7 +70,7 @@
 		"model": "Tutorial_Cookbook_Recipe",
 		"name": "new",
 		"rule": {
-			"templateUrl": "Document/Tutorial/Cookbook/Recipe/form.twig",
+			"templateUrl": "Document/Tutorial/Cookbook/Recipe/new.twig",
 			"labelKey": "m.rbs.admin.adminjs.new_resource | ucf"
 		},
 		"auto": true

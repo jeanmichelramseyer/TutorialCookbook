@@ -1,22 +1,25 @@
 <div class="row">
-	<div rbs-aside-column>
-		<rbs-default-asides-for-list></rbs-default-asides-for-list>
+
+	<div data-rbs-aside-column="">
+		{% include '@Rbs_Admin/view/asides.twig' %}
+		{% include '@Rbs_Admin/view/links.twig' %}
 	</div>
 
-	<div rbs-main-column>
+	<div data-rbs-main-column="">
 		<rbs-page-header title="{{ i18nAttr('m.tutorial.cookbook.documents.recipe_list', ['ucf']) }}"></rbs-page-header>
 		<rbs-document-filter-panel open-by-default="false"
 			model="Tutorial_Cookbook_Recipe" filter="filter" ></rbs-document-filter-panel>
 		<div class="add-elements-bar">
-			<a href ng-href="(= 'Tutorial_Cookbook_Recipe' | rbsURL:'new' =)">
+			<a href data-ng-href="{{ namedURL('Tutorial_Cookbook_Recipe', 'new') }}">
 				{{ i18n('m.tutorial.cookbook.documents.recipe_create', ['ucf']) }}
 			</a>
 		</div>
 
-		<rbs-document-list data-dlid="DLCollection1" model="Tutorial_Cookbook_Recipe" filter-collection="filter" publishable="true">
+		<rbs-document-list data-dlid="DLTutorialCookbookRecipe" model="Tutorial_Cookbook_Recipe" filter-collection="filter" publishable="true">
 			<rbs-column name="label" primary="true"></rbs-column>
 			<rbs-column name="date">(= doc.date|rbsDateTime =)</rbs-column>
 			<rbs-column name="endDate">(= doc.endDate|rbsDateTime =)</rbs-column>
 		</rbs-document-list>
 	</div>
+
 </div>

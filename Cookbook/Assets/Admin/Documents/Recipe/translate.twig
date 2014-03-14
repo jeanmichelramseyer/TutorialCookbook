@@ -1,0 +1,49 @@
+<div class="row" data-rbs-document-editor-base="" model="Tutorial_Cookbook_Recipe">
+
+	<div class="col-md-12">
+		<rbs-page-header document="document" sub-title="{{ i18nAttr(modelKey('Tutorial_Cookbook_Recipe'), ['ucf']) }}"></rbs-page-header>
+	</div>
+
+	<div data-rbs-aside-column="">
+		{% include '@Rbs_Admin/view/asides.twig' %}
+		{% include '@Rbs_Admin/view/links.twig' %}
+	</div>
+
+	<div class="document-form" data-rbs-main-column="">
+
+		<form data-ng-submit="submit()" data-rbs-document-editor-edit="" data-rbs-document-editor-translate=""
+			data-rbs-document-editor-tutorial-cookbook-recipe-i18n="">
+			<fieldset data-rbs-editor-section=""
+				data-editor-section-label="{{ i18nAttr('m.rbs.admin.admin.general_properties', ['ucf']) }}">
+
+				<rbs-field-label-title property="title" required="true"
+					label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'label'), ['ucf']) }} / {{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'title'), ['ucf']) }}">
+				</rbs-field-label-title>
+
+				<hr />
+
+				<rbs-field-rich-text property="ingredients" required="true" profile="Website"
+					label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'ingredients'), ['ucf']) }}">
+				</rbs-field-rich-text>
+
+				<rbs-field-rich-text property="preparation" required="true" profile="Website"
+					label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'preparation'), ['ucf']) }}">
+				</rbs-field-rich-text>
+
+			</fieldset>
+
+			<fieldset data-rbs-editor-section="publication"
+				data-editor-section-label="{{ i18nAttr('m.rbs.admin.admin.publication_properties', ['ucf']) }}"
+				data-rbs-document-publication-section="">
+			</fieldset>
+
+			<fieldset
+				data-rbs-editor-section="systeminfo"
+				data-editor-section-label="{{ i18nAttr('m.rbs.admin.adminjs.status', ['ucf']) }}"
+				data-rbs-document-system-info-section="">
+			</fieldset>
+
+			<rbs-document-editor-button-bar></rbs-document-editor-button-bar>
+		</form>
+	</div>
+</div>

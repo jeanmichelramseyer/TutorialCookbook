@@ -44,5 +44,8 @@
 	},
 	"recipe_list":{
 		"message":"recettes"
+	},
+	"recipe_create":{
+		"message":"ajouter une recette"
 	}
 }
