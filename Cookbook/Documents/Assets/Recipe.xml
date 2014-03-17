@@ -3,6 +3,7 @@
 	xsi:schemaLocation="http://www.rbs.fr/schema/change-document/4.0 http://www.rbschange.fr/schema/4.0/document.xsd"
 	editable="true" localized="true" publishable="true">
 	<properties>
+		<property name="publicationSections" type="DocumentArray" document-type="Rbs_Website_Section" />
 		<property name="vegetarian" type="Boolean" />
 		<property name="ingredients" localized="true" type="RichText"/>
 		<property name="peopleNumber" type="Integer"/>
