@@ -1,7 +1,6 @@
-<div class="row" data-rbs-document-editor-base="" model="Tutorial_Cookbook_Recipe">
-
+<div class="row" data-rbs-document-editor-base="" data-model="Tutorial_Cookbook_Recipe">
 	<div class="col-md-12">
-		<rbs-page-header document="document" sub-title="{{ i18nAttr(modelKey('Tutorial_Cookbook_Recipe'), ['ucf']) }}"></rbs-page-header>
+		<rbs-page-header sub-title="{{ i18nAttr(modelKey('Tutorial_Cookbook_Recipe'), ['ucf']) }}"></rbs-page-header>
 	</div>
 
 	<div data-rbs-aside-column="">
@@ -10,7 +9,6 @@
 	</div>
 
 	<div class="document-form" data-rbs-main-column="">
-
 		<form data-ng-submit="submit()" data-rbs-document-editor-edit="" data-rbs-document-editor-translate=""
 			data-rbs-document-editor-tutorial-cookbook-recipe-i18n="">
 			<fieldset data-rbs-editor-section=""
@@ -29,7 +27,6 @@
 				<rbs-field-rich-text property="preparation" required="true" profile="Website"
 					label="{{ i18nAttr(propertyKey('Tutorial_Cookbook_Recipe', 'preparation'), ['ucf']) }}">
 				</rbs-field-rich-text>
-
 			</fieldset>
 
 			<fieldset data-rbs-editor-section="publication"
