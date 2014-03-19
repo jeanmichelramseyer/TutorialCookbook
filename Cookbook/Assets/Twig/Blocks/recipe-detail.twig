@@ -1,4 +1,6 @@
 {% if doc %}
+<a href="{{ functionURL('Tutorial_Cookbook_RecipeList') }}">{{ i18n('m.tutorial.cookbook.front.back_to_recipes_list', ['ucf']) }}</a>
+
 {% import 'Tutorial_Cookbook/macros.twig' as recipeMacros %}
 <article itemscope="" itemtype="http://schema.org/Article">
 	<header>
@@ -36,12 +38,12 @@
 					{{ doc.cookingtime }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
 				</li>
 				{% endif %}
-				{% if doc.restime %}
+				{% if doc.resttime %}
 				<li>
-					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_restime', ['ucf', 'lab']) }}</strong>
-					{{ doc.restime }}
-						{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeRestimeUnit') %}
-							{% if doc.restimeunit == item.value %}
+					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_resttime', ['ucf', 'lab']) }}</strong>
+					{{ doc.resttime }}
+						{% for item in collectionItems('Tutorial_Cookbook_Collection_RestTimeUnit') %}
+							{% if doc.resttimeunit == item.value %}
 								{{ item.title }}
 							{% endif %}
 						{% endfor %}
