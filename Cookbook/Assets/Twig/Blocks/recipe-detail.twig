@@ -27,13 +27,13 @@
 				{% if doc.preparationtime %}
 				<li>
 					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_preparationtime', ['ucf', 'lab']) }}</strong>
-					{{ doc.peoplenumber }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
+					{{ doc.preparationtime }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
 				</li>
 				{% endif %}
 				{% if doc.cookingtime %}
 				<li>
 					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_cookingtime', ['ucf', 'lab']) }}</strong>
-					{{ doc.peoplenumber }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
+					{{ doc.cookingtime }} {{ i18n('m.tutorial.cookbook.front.minutes', ['ls']) }}
 				</li>
 				{% endif %}
 				{% if doc.restime %}
@@ -61,7 +61,7 @@
 				<li>
 					<strong>{{ i18n('m.tutorial.cookbook.documents.recipe_cost', ['ucf', 'lab']) }}</strong>
 					{% for item in collectionItems('Tutorial_Cookbook_Collection_RecipeCost') %}
-						{% if doc.difficulty == item.value %}
+						{% if doc.cost == item.value %}
 							{{ item.title }}
 						{% endif %}
 					{% endfor %}
