@@ -1,0 +1,6 @@
+{
+    "tutorial_cookbook:import-sample": {
+        "description": "Import sample recipes",
+        "dev": false
+	}
+}
