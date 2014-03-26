@@ -6,7 +6,7 @@
 			"redirectTo": "/Tutorial/Cookbook/Recipe/",
 			"labelKey": "m.tutorial.cookbook.admin.module_name | ucf"
 		},
-		"auto": true
+		"auto": false
 	},
 	"/Tutorial/Cookbook/Recipe/": {
 		"model": "Tutorial_Cookbook_Recipe",
