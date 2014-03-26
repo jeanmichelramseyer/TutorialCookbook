@@ -1,0 +1,659 @@
+{
+	"contextId": "Cookbook samples",
+	"documents": [
+		// Images
+		{
+			"_id": "10001",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_paveBoeuf",
+			"label": "Pavé de boeuf sauce moutarde, pain d'épice et purée de céleri",
+			"path": {
+				"storageURI": "change:\/\/images\/paveBoeuf.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10002",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_fondantChocolatTruffe",
+			"label": "Fondant au chocolat et à la truffe fraîche",
+			"path": {
+				"storageURI": "change:\/\/images\/fondantChocolatTruffe.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10003",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_recipe_patesPoireauxSaintJacques",
+			"label": "Castellane aux poireaux et aux Saint-Jacques",
+			"path": {
+				"storageURI": "change:\/\/images\/patesPoireauxSaintJacques.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10004",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_trianon",
+			"label": "Le trianon",
+			"path": {
+				"storageURI": "change:\/\/images\/trianon.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10005",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_tarteTomateMunsterCumin",
+			"label": "Tarte à la tomate, munster et cumin",
+			"path": {
+				"storageURI": "change:\/\/images\/tarteTomateMunsterCumin.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10006",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_terrineRicottaPoivronsBasilicMiel",
+			"label": "Terrine de ricotta aux poivrons marinés, basilic et miel",
+			"path": {
+				"storageURI": "change:\/\/images\/terrineRicottaPoivronsBasilicMiel.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10007",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_verrineTomateVinaigretteMiel",
+			"label": "Verrines de petits légumes, mousse au chèvre, vinaigrette miel et balsamique",
+			"path": {
+				"storageURI": "change:\/\/images\/verrineTomateVinaigretteMiel.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10008",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_smoothieFraiseMenthe",
+			"label": "Smoothie de fraise à la menthe fraîche",
+			"path": {
+				"storageURI": "change:\/\/images\/smoothieFraiseMenthe.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10009",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_samoussaThonEpice",
+			"label": "Samoussa de thon épicé",
+			"path": {
+				"storageURI": "change:\/\/images\/samoussaThonEpice.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10010",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_pancakeCacaoSauceCaramelDemiSel",
+			"label": "Pancake au cacao et sauce au caramel demi-sel",
+			"path": {
+				"storageURI": "change:\/\/images\/pancakeCacaoSauceCaramelDemiSel.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10011",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_bruschettaLegumesAilles",
+			"label": "Bruschetta de légumes aillés",
+			"path": {
+				"storageURI": "change:\/\/images\/bruschettaLegumesAilles.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "10012",
+			"_model": "Rbs_Media_Image",
+			"code": "tutorial_cookbook_img_pommeDeTerreRobeDesChampsMimolette",
+			"label": "Pomme de terre en robe des champs et mimolette",
+			"path": {
+				"storageURI": "change:\/\/images\/pommeDeTerreRobeDesChampsMimolette.jpg"
+			},
+			"_LCID": {
+				"fr_FR": {
+					"alt": null,
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		// Recipes
+		{
+			"_id": "1001",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_paveBoeuf",
+			"label": "Pavé de boeuf sauce moutarde, pain d'épice et purée de céleri",
+			"vegetarian": false,
+			"peopleNumber": 6,
+			"preparationTime": 15,
+			"cookingTime": 25,
+			"picture":  {
+				"_id": "10001"
+			},
+			"difficulty": 2,
+			"cost": 2,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Pavé de boeuf sauce moutarde, pain d'épice et purée de céleri",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Pavé(s) de boeuf de 150g : 6 pc(s)\n* Céleri(s) rave : 1 pc(s)\n* Echalote(s) : 2 pc(s)\n* Beurre doux : 40 g\n* Lait 1/2 ecrémé : 25 cl\n* Crème liquide entière : 20 cl\n* Vin blanc sec : 20 cl\n* Moutarde forte : 10 g\n* Graine(s) de moutarde blonde : 6 g\n* Tranche(s) de pain d'épice : 6 pc(s)\n* Sel fin : 6 Pincée(s)\n* Moulin à poivre : 6 Tour(s)\n* Huile d'arachide : 3 cl",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Éplucher les échalotes et le céleri rave. Émincer en fines lamelles les échalotes. Couper le céleri rave en petits dés.\n\nDans une cocotte chaude, cuire la moitié des échalotes avec 20 g de beurre et 1 pincée de sel pendant 2 min. Ajouter le céleri, 20 cl de lait et cuire à couvert pendant 20 à 25 min en remuant régulièrement. Une fois le céleri cuit, ajouter la moitié de la crème et mixer l'ensemble au blender. Rectifier l'assaisonnement et réserver.\n\nCouper le pain d'épice en petits dés d'environ 0,5 cm de côté. Dans une poêle chaude, mettre 10 g de beurre et lorsqu'il est chaud, colorer le pain d'épice pour qu'il soit bien doré. Égoutter sur du papier absorbant et réserver.\n\nDans une poêle chaude, faire dorer toutes les faces du boeuf avec un filet d'huile d'arachide. Assaisonner de sel fin et réserver la viande (la couvrir pour ne pas qu'elle refroidisse). Mettre un morceau de beurre dans la poêle, ajouter les échalotes ciselées, une pincée de sel et cuire 1 min. Déglacer ensuite avec le vin blanc, faire réduire puis ajouter la moutarde et les graines de moutarde. Bien mélanger et incorporer le reste de la crème. Faire bouillir pour épaissir légèrement et poivrer généreusement. Réchauffer le boeuf doucement dans la sauce avant de servir.\n\nDresser la purée de céleri dans un cercle en inox sur l'assiette, poser le boeuf dessus et napper de sauce. Décorer avec les croûtons de pain d'épice.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1002",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_fondantChocolatTruffe",
+			"label": "Fondant au chocolat et à la truffe fraîche",
+			"vegetarian": true,
+			"peopleNumber": 6,
+			"preparationTime": 5,
+			"cookingTime": 6,
+			"picture": {
+				"_id": "10002"
+			},
+			"difficulty": 2,
+			"cost": 3,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Fondant au chocolat et à la truffe fraîche",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Oeuf(s) : 3 pc(s)\n* Sucre semoule : 110 g\n* Chocolat noir : 90 g\n* Beurre doux : 85 g\n* Farine de blé : 35 g\n* Truffe noire : 30 g",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Deux jours avant, mettre la truffe et les oeufs dans le même récipient.\nFaire fondre le chocolat au bain-marie avec le beurre.\nLaver et brosser la truffe, puis la couper en 6 éclats.\nBlanchir les oeufs et le sucre au batteur jusqu'à obtenir une mousse compacte.\n\nPréchauffer le four à 200 °C.\nA la main, ajouter le chocolat, puis délicatement la farine. Réaliser des bandelettes dans le papier cuisson et les rouler à l'intérieur des cercles en inox. Verser l'appareil à fondant aux 3/4 des moules, insérer un éclat de truffe fraîche et enfourner à 200 °C pendant 6 min.\n\nPoser un fondant dans l'assiette, enlever le cercle puis le papier.\nA déguster chaud ou froid.\n",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1003",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_patesPoireauxSaintJacques",
+			"label": "Castellane aux poireaux et aux Saint-Jacques",
+			"vegetarian": false,
+			"peopleNumber": 6,
+			"preparationTime": 15,
+			"cookingTime": 15,
+			"picture": {
+				"_id": "10003"
+			},
+			"difficulty": 3,
+			"cost": 3,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Castellane aux poireaux et aux Saint-Jacques",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Noix de Saint Jacques : 18 pc(s)\n* Castellane : 500 g\n* Blanc(s) de poireau(x) : 3 pc(s)\n* Echalote(s) : 1 pc(s)\n* Sel fin : 3 Pincée(s)\n* Moulin à poivre : 2 Tour(s)\n* Huile d'olive : 5 cl\n* Crème liquide entière : 20 cl\n* Fleur de sel : 6 Pincée(s)",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Porter de l'eau à ébullition dans une casserole, puis cuire les pâtes \"al dente\".\n\nFendre les poireaux en 4 puis les émincer finement. Ciseler l'échalote.\nDans une sauteuse, verser un filet d'huile d'olive et faire suer l'échalote et les poireaux pendant 5 min avec une pincée de sel fin. Ajouter la crème et laisser cuire à feu doux 5 min de plus.\nRajouter les pâtes dans la sauteuse.\n\nDans une poêle chaude, saisir les noix de Saint-Jacques avec un filet d'huile d'olive pendant 1 min de chaque côté. Les assaisonner de fleur de sel et de poivre.\n\nDresser harmonieusement dans des assiettes.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1004",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_trianon",
+			"label": "Le trianon",
+			"vegetarian": true,
+			"peopleNumber": 6,
+			"preparationTime": 30,
+			"cookingTime": 10,
+			"restTime": 3,
+			"restTimeUnit": 2,
+			"picture": {
+				"_id": "10004"
+			},
+			"difficulty": 3,
+			"cost": 2,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Le trianon",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "**Pour le(s) biscuit(s):**\n* Noix de coco rapée : 70 g\n* Poudre d'amande : 70 g\n* Sucre glace : 135 g\n* Cacao en poudre non sucré : 10 g\n* Blanc(s) d'oeuf(s) : 150 g\n* Sucre semoule : 50 g\n\n**Pour la mousse :**\n\n* Chocolat noir : 115 g\n* Feuille(s) de gélatine de 2 g : 0.5 pc(s)\n* Lait 1/2 ecrémé : 10 cl\n* Crème liquide entière : 20 cl\n\n**Pour le reste de la recette :**\n* Chocolat au lait : 75 g\n* Pralin feuillantine : 25 g\n* Cacao en poudre non sucré : 30 g",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "**Pour le biscuit**\nPréchauffer le four à 170 °C (th. 5-6).\n\nMonter les blancs en neige. Lorsque le mélange double de volume, incorporer le sucre et serrer (fouetter rapidement) au maximum pour obtenir une meringue très ferme.\n\nDans un saladier, tamiser le sucre glace et le cacao, puis ajouter la poudre d'amande et de coco et mélanger. Incorporer ensuite les poudres aux blancs en neige en mélangeant délicatement à la spatule.\nSur une feuille de cuisson, étaler la pâte sur une épaisseur de 2 cm, puis enfourner pendant 10 à 15 min.\nAprès cuisson, découper le biscuit à la taille du cercle à entremets en inox (environ 18 cm).\n\n**Pour la mousse au chocolat**\n\nA l'aide d'un fouet électrique, monter la crème liquide en veillant à ce qu'elle ne soit pas trop ferme.\nFaire tremper la gélatine dans un grand volume d'eau froide.\n\nFaire fondre le chocolat au bain-marie.\nEn même temps, porter le lait juste à ébullition et y dissoudre la gélatine essorée. Verser ensuite 1/3 du lait sur le chocolat et mélanger à l'aide d'un fouet pour obtenir une texture lisse et brillante. Ajouter le reste du lait en 2 fois, toujours en mélangeant. Quand le mélange est tiède, incorporer la crème montée.\n\nChemiser le cercle à entremets contenant le biscuit avec une bande de papier sulfurisé, puis le poser sur une plaque recouverte de Silpat. Couler la mousse au chocolat au centre, puis bien lisser la surface.\nPlacer ensuite au congélateur pendant au moins 2 h.\n\n**Pour la décoration**\n\nFaire fondre le chocolat au lait au bain-marie, puis l'étaler très finement sur une feuille de papier sulfurisé et le saupoudrer de pralin. Placer ensuite au congélateur durant 30 min.\n\nSortir le gâteau 15 min avant de le déguster, le saupoudrer de cacao et le décorer d'éclats de feuillantine.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1005",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_tarteTomateMunsterCumin",
+			"label": "Tarte à la tomate, munster et cumin",
+			"vegetarian": true,
+			"peopleNumber": 4,
+			"preparationTime": 15,
+			"cookingTime": 15,
+			"restTime": 3,
+			"restTimeUnit": 1,
+			"picture": {
+				"_id": "10005"
+			},
+			"difficulty": 1,
+			"cost": 1,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Tarte à la tomate, munster et cumin",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Pâte feuilletée : 200 g\n* Tomate(s) : 4 pc(s)\n* Munster : 100 g\n* Graine(s) de cumin : 1 g\n* Fleur de sel : 4 Pincée(s)\n* Huile d'olive : 2 cl\n",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Préchauffer le four à 200 °C (th. 6-7).\n\nÉtaler la pâte sur le plan de travail. A l'aide d'un moule à tarte individuel, la détailler ensuite en laissant 2 cm de bord supplémentaire.\nFoncer les moules, puis rabattre l'excédent de pâte vers l'intérieur. Piquer le fond à l'aide d'une fourchette, puis réserver au frais.\n\nLaver les tomates et retirer le pédoncule, les tailler en 6 quartiers, puis les retailler en 2 dans la largeur.\nTailler le munster en petits dés.\n\nRépartir les cubes de tomates sur les fonds de tarte en les serrant. Combler les trous avec les cubes de munster, puis assaisonner de fleur de sel et de graines de cumin.\n\nArroser les tartelettes d'un trait d'huile d'olive, puis enfourner pendant 15 min.\nA la sortie du four, laisser reposer pendant 5 min, puis démouler et servir aussitôt.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1006",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_terrineRicottaPoivronsBasilicMiel",
+			"label": "Terrine de ricotta aux poivrons marinés, basilic et miel",
+			"vegetarian": true,
+			"peopleNumber": 6,
+			"preparationTime": 30,
+			"cookingTime": 20,
+			"picture": {
+				"_id": "10006"
+			},
+			"difficulty": 3,
+			"cost": 1,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Terrine de ricotta aux poivrons marinés, basilic et miel",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* 600 g de ricotta\n* 2 poivrons rouges\n* 2 poivrons jaunes ou orange\n* 2 c. à soupe de miel de thym\n* 1 bouquet de basilic\n* 2 gousses d’ail\n* 8 feuilles de gélatine\n* fleur de sel de Guérande\n* poivre du moulin",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Faites griller les poivrons sous le gril du four en les retournant régulièrement jusqu’à ce que la peau plisse, se décolle et commence à noircir.\n\nSortez-les du four et laissez-les refroidir un peu avant de les éplucher. Ouvrez-les en deux, retirez les pédoncules, épépinez-les et découpez-les en lanières que vous déposerez sur du papier absorbant.\n\nMettez la gélatine à ramollir dans un bol d’eau froide. Quand elle est molle, essorez-la en la pressant dans la main puis mettez-la à fondre au bain-marie ou au four à micro-ondes dans un peu d’eau chaude.\n\nEpluchez l’ail, lavez le basilic, séchez-le, effeuillez-le et ciselez-le.\n\nVersez la ricotta dans deux saladiers en parts égales. Dans l’un des deux saladiers, ajoutez le miel, le basilic haché, et l’ail écrasé. Ajoutez la moitié de la gélatine fondue et mélangez à la spatule.\n\nDans l’autre saladier, ajoutez tout simplement le reste de gélatine fondue et mélangez-la à la ricotta.\n\nChemisez un moule à cake d’une feuille de film alimentaire et commencez par disposer quelques lanières de poivron dans le fond. Salez-les de fleur de sel et donnez un tour de moulin à poivre. Versez une couche de ricotta simple, quelques lanières de poivron à nouveau, salez, poivrez puis ajoutez une couche de ricotta au basilic et au miel. Continuez ainsi de suite en alternant les deux ricottas et les lanières de poivron assaisonnées.\n\nRecouvrez de film alimentaire et réservez 5 à 6 heures au réfrigérateur.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1007",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_verrineTomateVinaigretteMiel",
+			"label": "Verrines de petits légumes, mousse au chèvre, vinaigrette miel et balsamique",
+			"vegetarian": true,
+			"peopleNumber": 4,
+			"preparationTime": 20,
+			"picture": {
+				"_id": "10007"
+			},
+			"difficulty": 1,
+			"cost": 3,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Verrines de petits légumes, mousse au chèvre, vinaigrette miel et balsamique",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* 2 grosses tomates\n* 1/2 concombre\n* 200g de fromage de chèvre frais\n* 30 cl de crème fraiche liquide\n* 2 cornichons hachés\n* 2 carottes\n* Gros sel\n\n**Pour la vinaigrette**\n\n* 1 cuillère à soupe de miel\n* 1 cuillère à soupe d’huile\n* vinaigre balsamique\n* sel",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Lavez les tomates, épépinez-les et coupez-les en petits dés. Épluchez le concombre, coupez-le en petits dès puis faites dégorger au gros sel et rincez. Epluchez les carottes et coupes-les en petits dés et mélangez-les avec les cornichons hachés.\n\nPréparez la vinaigrette. Assaisonnez les légumes.\n\nMélangez le fromage de chèvre et la crème. Salez, poivrez. Passez le mélange au chinois. Disposez dans le siphon et laissez au frais le temps de monter les verrines.\n\nDéposez dans chaque verrine une couche de concombre, de tomate et de carotte-cornichon.  Terminez en déposant de la mousse de chèvre.  Décorez d’une feuille de menthe et servez frais.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1008",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_smoothieFraiseMenthe",
+			"label": "Smoothie de fraise à la menthe fraîche",
+			"vegetarian": true,
+			"peopleNumber": 6,
+			"preparationTime": 15,
+			"picture": {
+				"_id": "10008"
+			},
+			"difficulty": 1,
+			"cost": 1,
+			"_LCID": {
+				"fr_FR": {
+					"label": "Smoothie de fraise à la menthe fraîche",
+					"title": "Smoothie de fraise à la menthe fraîche",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Fraise(s) : 300 g\n* Yaourt(s) Nature : 2 pc(s)\n* Lait 1/2 ecrémé : 5 cl\n* Menthe fraîche : 0.25 botte(s)\n* Sucre semoule : 50 g\n* Glaçon(s) : 10 pc(s)",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Laver les fraises et la menthe. Équeuter les fraises et les couper en 2. Réserver de belles feuilles de menthe pour la décoration.\n\nDans un blender, mixer les fraises, 10 feuilles de menthe et le reste des ingrédients jusqu'à obtention d'un smoothie onctueux et homogène.\n\nServir dans un verre avec quelques feuilles de menthe.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1009",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_samoussaThonEpice",
+			"label": "Samoussa de thon épicé",
+			"vegetarian": false,
+			"peopleNumber": 6,
+			"preparationTime": 30,
+			"cookingTime": 3,
+			"picture": {
+				"_id": "10009"
+			},
+			"difficulty": 3,
+			"cost": 3,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Samoussa de thon épicé",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Thon rouge : 900 g\n* Mélange 5 épices : 5 g\n* Gingembre frais : 10 g\n* Feuille(s) de brick : 1 pc(s)\n* Citron(s) jaune(s) : 1 pc(s)\n* Huile d'olive : 5 cl\n* Sel fin : 3 Pincée(s)\n* Piment d'Espelette : 2 Pincée(s)",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Couper le thon en petits morceaux façon tartare, puis le laisser mariner dans un peu d'huile d'olive, le jus du citron, les épices, le sel et le piment d'Espelette.\nÉplucher et hacher finement le gingembre.\n\nCouper des bandes de feuille de brick. Disposer un peu de thon et une pointe de gingembre au bord de chaque bande, puis replier en donnant la forme d'un triangle.\nDorer ensuite dans une poêle avec un filet d'huile d'olive pendant 3 min sur chaque face (le thon doit rester mi-cuit).",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1010",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_pancakeCacaoSauceCaramelDemiSel",
+			"label": "Pancake au cacao et sauce au caramel demi-sel",
+			"vegetarian": true,
+			"peopleNumber": 6,
+			"preparationTime": 10,
+			"cookingTime": 15,
+			"restTime": 1,
+			"restTimeUnit":  2,
+			"picture": {
+				"_id": "10010"
+			},
+			"difficulty": 2,
+			"cost": 2,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Pancake au cacao et sauce au caramel demi-sel",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "**Pour les pancake**\n* Farine de blé : 200 g\n* Farine de châtaigne : 50 g\n* Oeuf(s) : 3 pc(s)\n* Lait 1/2 ecrémé : 30 cl\n* Sachet(s) de levure chimique (11g) : 0.5 pc(s)\n* Sucre semoule : 40 g\n* Cacao en poudre non sucré : 20 g\n* Huile d'arachide : 3 cl\n\n**Pour la sauce**\n\n* Sucre semoule : 80 g\n* Crème liquide entière : 10 cl\n* Beurre salé : 40 g\n* Noix de pécan : 50 g",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "**Pour les pancake**\nMélanger les farines et la levure. Former un puits et ajouter les oeufs. Mélanger en incorporant progressivement le lait pour obtenir une pâte bien lisse. Ajouter ensuite le sucre et le cacao. Laisser reposer la pâte pendant 1 h.\n\nDans une poêle à blinis huilée, cuire les pancakes à feu modéré pendant 2 à 3 min de chaque côté.\n\nServir encore tiède nappé de caramel.\n\n**Pour la sauce**\n\nVerser le sucre dans une poêle et le cuire à sec jusqu'à obtenir une belle couleur caramel. Ajouter alors le beurre et bien mélanger, puis incorporer progressivement la crème. Faire bouillir pour obtenir une sauce homogène, puis verser le tout dans un bol et laisser refroidir.\n\nServir les pancakes nappés de sauce au caramel et parsemés de noix de pécan.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1011",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_bruschettaLegumesAilles",
+			"label": "Bruschetta de légumes aillés",
+			"vegetarian": true,
+			"peopleNumber": 6,
+			"preparationTime": 30,
+			"picture": {
+				"_id": "10011"
+			},
+			"difficulty": 1,
+			"cost": 1,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Bruschetta de légumes aillés",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Pain de campagne : 6 g\n* Gousse(s) d'ail : 2 pc(s)\n* Courgette(s) : 1 pc(s)\n* Basilic : 0.25 botte(s)\n* Purée de tomate confite : 100 g\n* Jambon cru Italien : 200 g\n* Mozzarella : 125 g\n* Piment d'Espelette : 2 g\n* Sel fin : 6 Pincée(s)\n* Huile d'olive : 5 cl",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Couper la mozzarella en rondelles puis la réserver au froid.\nMélanger la purée de tomates avec 10 cl d'eau pour la détendre. Éplucher les gousses d'ail et les hacher finement. Effeuiller et ciseler le basilic.\n\nTailler les courgettes en 2 dans le sens de la longueur, puis les émincer finement.\nFaire revenir les courgettes dans une poêle à l'huile d'olive pendant 3 à 4 min (elles doivent rester croquantes). Ajouter l'ail et le basilic en fin de cuisson. Assaisonner ensuite de sel et de piment d'Espelette.\n\nGriller les tranches de pain de campagne au four ou à la plancha. Les arroser ensuite du mélange à la tomate. Ajouter les courgettes, la mozzarella (laisser chauffer 2 min sur la plancha ou dans une poêle), puis recouvrir le tout de jambon coupé en fines lamelles.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		},
+		{
+			"_id": "1012",
+			"_model": "Tutorial_Cookbook_Recipe",
+			"code": "tutorial_cookbook_recipe_pommeDeTerreRobeDesChampsMimolette",
+			"label": "Pomme de terre en robe des champs et mimolette",
+			"vegetarian": true,
+			"peopleNumber": 4,
+			"preparationTime": 20,
+			"cookingTime": 40,
+			"picture": {
+				"_id": "10012"
+			},
+			"difficulty": 2,
+			"cost": 1,
+			"_LCID": {
+				"fr_FR": {
+					"title": "Pomme de terre en robe des champs et mimolette",
+					"ingredients": {
+						"e": "Markdown",
+						"t": "* Pomme(s) de terre à chair farineuse : 4 pc(s)\n* Mimolette : 100 g\n* Beurre doux : 80 g\n* Sel fin : 4 Pincée(s)\n* Poivre noir : 4 Pincée(s)\n* Gros sel : 10 g\n* Roquette : 30 g",
+						"h": null
+					},
+					"preparation": {
+						"e": "Markdown",
+						"t": "Laver les pommes de terre, puis les mettre dans une grande casserole d'eau avec le gros sel. Les cuire ensuite à couvert pendant 20 à 30 min.\n\nPréchauffer le four à 220 °C (th. 7).\n\nÉgoutter les pommes de terre et les couper en 2 dans le sens de la longueur. Retirer la chair et l'écraser avec le beurre. Assaisonner le tout de sel et de poivre, puis remettre la purée ainsi obtenue dans les pommes de terre.\nLes parsemer généreusement de mimolette râpée, puis les enfourner pendant 5 à 10 min.\n\nLes servir chaudes dès la sortie du four, accompagnées de quelques feuilles de roquette.",
+						"h": null
+					},
+					"creationDate": "2014-01-01T12:00:00+0000",
+					"authorName": "tutorial",
+					"active": true,
+					"startActivation": null,
+					"endActivation": null
+				}
+			}
+		}
+	]
+}
