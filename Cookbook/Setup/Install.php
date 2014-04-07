@@ -16,7 +16,7 @@ class Install extends \Change\Plugins\InstallBase
 	{
 		$configuration->addPersistentEntry('Change/Events/BlockManager/Tutorial_Cookbook', '\Tutorial\Cookbook\Events\BlockManager\Listeners');
 		$configuration->addPersistentEntry('Change/Events/PageManager/Tutorial_Cookbook', '\Tutorial\Cookbook\Events\PageManager\Listeners');
-		$configuration->addPersistentEntry('Change/Events/Commands/Rbs_Generic', '\Tutorial\Cookbook\Commands\Listeners');
+		$configuration->addPersistentEntry('Change/Events/Commands/Tutorial_Cookbook', '\Tutorial\Cookbook\Commands\Listeners');
 	}
 
 	/**
