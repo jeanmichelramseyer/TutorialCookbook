@@ -37,35 +37,6 @@
 		},
 		"auto": true
 	},
-	"/Tutorial/Cookbook/Recipe/:id/translate/:LCID/workflow": {
-		"model": "Tutorial_Cookbook_Recipe",
-		"name": "localizedWorkflow",
-		"rule": {
-			"templateUrl": "Rbs/Admin/workflow/workflow.twig?model=Tutorial_Cookbook_Recipe",
-			"controller": "RbsChangeWorkflowController",
-			"labelKey": "m.rbs.workflow.admin.workflow | ucf"
-		},
-		"auto": true
-	},
-	"/Tutorial/Cookbook/Recipe/:id/urls": {
-		"model": "Tutorial_Cookbook_Recipe",
-		"name": "urls",
-		"rule": {
-			"templateUrl": "Rbs/Admin/url-manager.twig",
-			"labelKey": "m.rbs.admin.admin.urls | ucf"
-		},
-		"auto": true
-	},
-	"/Tutorial/Cookbook/Recipe/:id/workflow": {
-		"model": "Tutorial_Cookbook_Recipe",
-		"name": "workflow",
-		"rule": {
-			"templateUrl": "Rbs/Admin/workflow/workflow.twig?model=Tutorial_Cookbook_Recipe",
-			"controller": "RbsChangeWorkflowController",
-			"labelKey": "m.rbs.workflow.admin.workflow | ucf"
-		},
-		"auto": true
-	},
 	"/Tutorial/Cookbook/Recipe/new": {
 		"model": "Tutorial_Cookbook_Recipe",
 		"name": "new",
